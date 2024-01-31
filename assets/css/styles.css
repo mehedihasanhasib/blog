@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 45vw;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+}
+
+h2 a {
+    color: #000;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="file"] {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #4caf50;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.dashboard a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #ddd;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+}
+
+.dashboard a:hover {
+    background-color: #ccc;
+}
+
+
+/* Additional styling for individual pages if needed */

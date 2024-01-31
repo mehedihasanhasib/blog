@@ -1,0 +1,91 @@
+* {
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 570px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: rgb(240, 245, 240);
+    box-shadow: rgba(81, 231, 89, 0.2) 0px 8px 24px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    font-size: 1.2rem;
+    padding: 7px;
+    margin-top: 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(134, 81, 231);
+}
+
+input:focus {
+    outline: 2px solid rgb(134, 81, 231);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+button {
+    height: 40px;
+    width: 90px;
+    background-color: rgb(134, 81, 231);
+    border: none;
+    margin-top: 14px;
+    font-size: 1.3rem;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(117, 99, 170);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.links {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links p,
+a {
+    margin: 3px;
+    font-size: 1.1rem;
+}
+
+.err-msg {
+    color: red;
+}
