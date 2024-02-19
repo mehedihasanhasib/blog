@@ -69,7 +69,6 @@ include "dbConnect.php";
         }
         ?>
 
-
         <div class="container">
 
             <form action="create_post.php" method="post" enctype="multipart/form-data">

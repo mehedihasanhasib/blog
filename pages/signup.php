@@ -19,6 +19,23 @@
 
 
         include "dbConnect.php";
+        $create_users_table = "CREATE TABLE IF NOT EXISTS users ( id int not null auto_increment, first_name varchar(50) not null, last_name varchar(100) not null, email varchar(100) not null, profile_picture varchar(100) not null, pwd varchar(100) not null, primary key (id) );";
+
+        // Create table
+        $connection->query($create_users_table);
+
+        $create_blogs_table = "CREATE TABLE IF NOT EXISTS blogs (
+            id int not null auto_increment,
+            title varchar(255) not null,
+            content longtext not null,
+            user_id int not null,
+            images varchar(100) not null,
+            PRIMARY KEY (id),
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        )";
+
+        // create blog table
+        $connection->query($create_blogs_table);
 
         // preparing profile picture's path
         $target_file = "../assets/images/profile_picture/" . basename($_FILES["image"]["name"]);
